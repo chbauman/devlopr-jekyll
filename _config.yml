@@ -1,4 +1,4 @@
-title: John Doe
+title: Christian Baumann
 subtitle: Web Developer and Designer
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a Jekyll Theme Built For Developers
@@ -64,15 +64,15 @@ author_project_details:
 
 # social links
 twitter_username: johndoe
-github_username:  johndoe
+github_username:  chbauman
 facebook_username: johndoe
 linkedin_username: johndoe
 behance_username: johndoe
 instagram_username: johndoe
 medium_username: johndoe
 telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+#dribbble_username: johndoe
+#flickr_username: johndoe
 
 #for comments using disqus
 disqus_shortname: sujay-kundu  
