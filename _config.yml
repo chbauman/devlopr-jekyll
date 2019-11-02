@@ -1,22 +1,18 @@
 title: Christian Baumann
-subtitle: Web Developer and Designer
+subtitle: Programmer
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a Jekyll Theme Built For Developers
 
-url: "https://devlopr.netlify.com" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://chbauman.github.io/" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
     - text: Blog
       url: /blog
     - text: Shop
-      url : /shop/
-    - text: About Me
       url: /about/
     - text: Contact Me
       url : /contact/
-    - text: Styleguide
-      url: /styleguide/
     
 
 # Edit these details 
@@ -24,38 +20,27 @@ urls:
 author_logo: profile.png
 author: Christian Baumann
 author_bio: Hi, My Name is Chris.
-author_email: "johndoe@gmail.com"
+author_email: "chbauman@student.ethz.ch"
 author_location: Switzerland
 author_website_url: "https://chbauman.github.io/"
 
 author_work_experiences: 
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
-              visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: AGFA Gevaert
+              company_logo: agfa.png
+              company_url: https://www.agfa.com/
+              designation: Research Intern
+              description: Worked on image processing using machine learning.
               visibility: true
 
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: eth.png
+                college_name: ETH
+                college_url: https://ethz.ch/
+                college_degree: Computational Science and Engineering
+                description: Bachelor of Science
                 visibility: true
 
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
               - project_thumbnail: programmingebooks.png
                 project_title: Programming Ebooks
                 project_description: A Platform to easily find and read programming books
@@ -63,25 +48,9 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
 github_username:  chbauman
 facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
 instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
-
-#for comments using disqus
-disqus_shortname: sujay-kundu  
-
-# wakatime username (coding activity)
-wakatime_username: sujaykundu777
-
-# formspree (contact form)
-formspree_email: johndoe@gmail.com
 
 # syntax highlighter
 markdown: kramdown
@@ -94,7 +63,7 @@ google_analytics: UA-46783401-10
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+show_author_project_details: false
 
 # dont touch this unless required
 plugins:
