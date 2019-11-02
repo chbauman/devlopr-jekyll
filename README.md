@@ -1,4 +1,6 @@
-
+---
+permalink: /index.html
+---
 
 ### Build a free blog using devlopr jekyll and Github Pages
 
