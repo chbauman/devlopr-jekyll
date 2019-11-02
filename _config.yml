@@ -9,11 +9,18 @@ baseurl: "" # the subpath of your site, e.g. /blog
 urls:
     - text: Blog
       url: /blog
-    - text: Shop
+    - text: About
       url: /about/
     - text: Contact Me
       url : /contact/
     
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+        thumbnail: default_post.png
 
 # Edit these details 
 
