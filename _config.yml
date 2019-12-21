@@ -41,7 +41,13 @@ author_work_experiences:
 
 author_education_details:
               - college_logo: eth.png
-                college_name: ETH
+                college_name: ETH Zürich
+                college_url: https://ethz.ch/
+                college_degree: Computational Science and Engineering (On-Going)
+                description: Master of Science
+                visibility: true
+              - college_logo: eth.png
+                college_name: ETH Zürich
                 college_url: https://ethz.ch/
                 college_degree: Computational Science and Engineering
                 description: Bachelor of Science
