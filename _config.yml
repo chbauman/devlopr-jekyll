@@ -35,8 +35,8 @@ author_work_experiences:
             - company_name: AGFA Gevaert
               company_logo: agfa.png
               company_url: https://www.agfa.com/
-              designation: Research Intern
-              description: Worked on image processing using machine learning.
+              designation: Research and Development Internship
+              description: Image processing using machine learning.
               visibility: true
 
 author_education_details:

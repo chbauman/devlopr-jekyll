@@ -2,6 +2,7 @@
 :root {
     --main-font-color: #1dbf48;
     --main-font-color-light: #9dffa8;
+    --main-font-color-dark: #1d8848;
     --box-bg-color: #151515;
     --main-bg-color: #333333;
     --light-bg-color: #444444;
@@ -110,6 +111,10 @@ header {
 
 .active {
     color: var(--main-font-color-light) !important;
+}
+
+.card-subtitle {
+    color: var(--main-font-color-dark) !important;
 }
 
 #navigation {
