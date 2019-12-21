@@ -10,15 +10,15 @@ urls:
     - text: Blog
       url: /blog
     - text: About
-      url: /about/
+      url: /about
     - text: Contact Me
-      url : /contact/
+      url : /contact
     
 defaults:
   -
     scope:
       path: ""
-      type: "post"
+      type: "posts"
     values:
         thumbnail: default_post.png
 
