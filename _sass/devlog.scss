@@ -1,8 +1,10 @@
 
 :root {
     --main-font-color: #1dbf48;
+    --main-font-color-light: #9dffa8;
     --box-bg-color: #151515;
     --main-bg-color: #333333;
+    --light-bg-color: #444444;
     --shadow-color: #1dbf48;
 }
 
@@ -91,6 +93,16 @@ header {
     }
 }
 
+.breadcrumb {
+    box-shadow: 0px 0px 15px var(--main-font-color-light);
+    background-color: var(--box-bg-color) !important;
+    margin: 20px !important;
+}
+
+.active {
+    color: var(--main-font-color-light) !important;
+}
+
 #navigation {
     margin-top: 50px;
 }
@@ -159,7 +171,8 @@ code {
     word-break: break-all;
     font-family: Courier, monospace;
     font-size: 16px;
-    background-color: #F4F6F8;
+    background-color: var(--light-bg-color) !important;
+    color: #ff85ac !important;
     padding: 5px;
     display: block;
 }
