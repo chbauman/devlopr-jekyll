@@ -7,23 +7,21 @@ url: "https://chbauman.github.io/" # the base hostname & protocol for your site,
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
-    - text: Blog
-      url: /blog
-    - text: About
-      url: /about
-    - text: Contact Me
-      url : /contact
-    
+  - text: Blog
+    url: /blog
+  - text: About
+    url: /about
+  - text: Contact Me
+    url: /contact
+
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-        thumbnail: default_post.png
+      thumbnail: default_post.png
 
-# Edit these details 
-
+# Edit these details
 author_logo: profile.png
 author: Christian Baumann
 author_bio: Hello there, my name is Chris and this is my personal website.
@@ -31,34 +29,46 @@ author_email: "chbauman@student.ethz.ch"
 author_location: Switzerland
 author_website_url: "https://chbauman.github.io/"
 
-author_work_experiences: 
-            - company_name: AGFA Gevaert
-              company_logo: agfa.png
-              company_url: https://www.agfa.com/
-              designation: Research and Development Internship
-              description: Image processing using machine learning.
-              visibility: true
+author_work_experiences:
+  - company_name: Schiller AG
+    company_logo: schiller.jpg
+    company_url: https://www.schiller.ch/corp/en
+    designation: Full-Time Job (ongoing)
+    description: Software engineer signal processing
+    visibility: true
+  - company_name: Empa
+    company_logo: empa.png
+    company_url: https://www.empa.ch/
+    designation: Master thesis
+    description: Data-driven home energy scheduling
+    visibility: true
+  - company_name: AGFA Gevaert
+    company_logo: agfa.png
+    company_url: https://www.agfa.com/
+    designation: Internship in R&D
+    description: Image processing using machine learning
+    visibility: true
 
 author_education_details:
-              - college_logo: eth.png
-                college_name: ETH Zürich
-                college_url: https://ethz.ch/
-                college_degree: Computational Science and Engineering (On-Going)
-                description: Master of Science
-                visibility: true
-              - college_logo: eth.png
-                college_name: ETH Zürich
-                college_url: https://ethz.ch/
-                college_degree: Computational Science and Engineering
-                description: Bachelor of Science
-                visibility: true
+  - college_logo: eth.png
+    college_name: ETH Zürich
+    college_url: https://ethz.ch/
+    college_degree: Computational Science and Engineering
+    description: Master of Science
+    visibility: true
+  - college_logo: eth.png
+    college_name: ETH Zürich
+    college_url: https://ethz.ch/
+    college_degree: Computational Science and Engineering
+    description: Bachelor of Science
+    visibility: true
 
 author_project_details:
-              - project_thumbnail: programmingebooks.png
-                project_title: Programming Ebooks
-                project_description: A Platform to easily find and read programming books
-                project_url: https://programmingebooks.com
-                visibility: true
+  - project_thumbnail: programmingebooks.png
+    project_title: Programming Ebooks
+    project_description: A Platform to easily find and read programming books
+    project_url: https://programmingebooks.com
+    visibility: true
 
 # social links
 github_username: chbauman
@@ -71,7 +81,7 @@ highlighter: rouge
 permalink: pretty
 
 # google analytics
-google_analytics: UA-46783401-10 
+google_analytics: UA-46783401-10
 
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
@@ -88,12 +98,12 @@ plugins:
   - jekyll-algolia
 # - jekyll-archives
 
-# algolia search 
+# algolia search
 algolia:
   application_id: D9WA1YKTRQ
   index_name: blog_posts # You can replace that with whatever name you want
   files_to_exclude: []
-  nodes_to_index: 'article'
+  nodes_to_index: "article"
   search_only_api_key: 58ffdd7cd6c45ec1577a7fcd789b1b9a
 
 # pagination of posts
@@ -101,13 +111,13 @@ paginate: 8
 per_page: 4
 paginate_path: "/blog/page/:num/"
 
-# minify 
+# minify
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
   endings: all
   ignore:
-    envs: ['development']
+    envs: ["development"]
 
 # Archives
 # jekyll-archives:
@@ -117,10 +127,8 @@ compress_html:
 #   permalinks:
 #     category: '/category/:name/'
 
-
 collections:
- - products
-
+  - products
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
