@@ -21,4 +21,3 @@ The following list shows a few tasks that may further improve the website.
 - Fix way to add inline code (\`test` does not work)
 - Change color of \<mark>HTML elements\</mark>
 - Think of more tasks and implement them
-
