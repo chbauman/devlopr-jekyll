@@ -26,7 +26,7 @@ author_email: "chris.baum.1995@gmail.com"
 author_location: Switzerland
 author_website_url: "https://chrisbaumann.ch"
 typewrite-text: This is my personal homepage.
-hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
+hero_cover_img: sample_cover.jpeg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
