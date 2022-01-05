@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-01-05T20:52:00+00:00</updated><id>/feed.xml</id><title type="html">Christian Baumann</title><subtitle>devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.</subtitle><author><name>Christian Baumann</name></author><entry><title type="html">Homepage update</title><link href="/info/2022/01/04/page-update/" rel="alternate" type="text/html" title="Homepage update" /><published>2022-01-04T20:00:00+00:00</published><updated>2022-01-04T20:00:00+00:00</updated><id>/info/2022/01/04/page-update</id><content type="html" xml:base="/info/2022/01/04/page-update/">&lt;p&gt;It was a long time ago that this page was forked from
+&lt;a href=&quot;https://github.com/sujaykundu777/devlopr-jekyll&quot;&gt;https://github.com/sujaykundu777/devlopr-jekyll&lt;/a&gt;.
+This branch was several hundreds commits behind the original and unfortunately,
+the build on Github suddenly failed.
+This was the main reason for the page update.&lt;/p&gt;</content><author><name>Christian Baumann</name></author><category term="info" /><summary type="html">It was a long time ago that this page was forked from https://github.com/sujaykundu777/devlopr-jekyll. This branch was several hundreds commits behind the original and unfortunately, the build on Github suddenly failed. This was the main reason for the page update.</summary></entry><entry><title type="html">TypeScript Sudoku Web-App</title><link href="/info/2020/03/25/sudoku-ts/" rel="alternate" type="text/html" title="TypeScript Sudoku Web-App" /><published>2020-03-25T20:00:00+00:00</published><updated>2020-03-25T20:00:00+00:00</updated><id>/info/2020/03/25/sudoku-ts</id><content type="html" xml:base="/info/2020/03/25/sudoku-ts/">&lt;p&gt;This post documents my TypeScript sudoku app. It can be accessed and tried out at
+&lt;a href=&quot;https://chbauman.github.io/sudoku-ts/&quot;&gt;https://chbauman.github.io/sudoku-ts/&lt;/a&gt;.
+A screenshot is shown in the image above.&lt;/p&gt;
+
+&lt;h3 id=&quot;general-usage&quot;&gt;General Usage&lt;/h3&gt;
+
+&lt;p&gt;To set a number in a cell, first click the cell and then the number
+you want to set. The numbers that would directly lead to
+an error in the sudoku cannot be set. The corresponding buttons
+on the number pad below the sudoku are grayed out and cannot be clicked.&lt;/p&gt;
+
+&lt;h3 id=&quot;bottom-buttons&quot;&gt;Bottom Buttons&lt;/h3&gt;
+
+&lt;p&gt;In this section, all the buttons at the bottom of the page are listed
+and explained.&lt;/p&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/reload.svg&quot; alt=&quot;Restart Sudoku&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+This button restarts the sudoku that is currently being solved.
+The current progress, including all possible hypotheses, will be lost.&lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/code-working.svg&quot; alt=&quot;Select Level Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+If you want to start a new sudoku, try this button. It also lets you choose a difficulty (level)
+for the next sudoku.&lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/help-circle.svg&quot; alt=&quot;Help Circle Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+Using this button will set the pencil marks specifying all possible numbers for every empty cells. 
+When other cells are set, the pencil marks that would show an invalid possibility are
+automatically removed.&lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/git-branch.svg&quot; alt=&quot;Branch Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+When activating this button, the next number that is set is assumed to be a guess
+and marked green. All previously set numberw will be colored black and assumed to be 
+true. This is basically a save point and with the next button one can revert
+to the state before using this button when the guess (the hypothesis) turns out to be falsy. &lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/close.svg&quot; alt=&quot;Revert Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+With this button, everything that was done since the last hypothesis will be 
+reverted. Together with the button above, this allows the user to manually perform
+a depth-first search for the solution of the sudoku. 
+&lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/document-outline.svg&quot; alt=&quot;Input own Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+When this button is clicked, an empty sudoku is shown. The user is then able
+to freely set cells, e.g., to setup a custom sudoku he wants to solve. 
+When clicked a second time, the currently set numbers are fixed and the sudoku can 
+normally be solved. 
+&lt;/div&gt;
+
+&lt;div style=&quot;width: 100%;margin:10px;display:inline-block;&quot;&gt;
+&lt;img src=&quot;/assets/img/SVG/information-circle.svg&quot; alt=&quot;Information Circle Icon&quot; style=&quot;float:left;width:50px;height:50px;background-color:white;margin:10px 10px 0px 0px&quot; /&gt;
+This is the information button, it shows an overview
+of the buttons from the bottom. It also offers two additional functionalities, solving the current sudoku
+or checking it for errors. &lt;/div&gt;
+
+&lt;p&gt;Note that &lt;em&gt;there is no undo button&lt;/em&gt;. So if you are not careful, you will
+lose all your progress.&lt;/p&gt;
+
+&lt;div style=&quot;width:50px;height:50px;&quot;&gt;&lt;ion-icon name=&quot;arrow-down&quot;&gt;&lt;/ion-icon&gt;&lt;/div&gt;</content><author><name>Christian Baumann</name></author><category term="info" /><summary type="html">This post documents my TypeScript sudoku app. It can be accessed and tried out at https://chbauman.github.io/sudoku-ts/. A screenshot is shown in the image above.</summary></entry><entry><title type="html">First Post</title><link href="/info/2019/11/02/first/" rel="alternate" type="text/html" title="First Post" /><published>2019-11-02T16:00:00+00:00</published><updated>2019-11-02T16:00:00+00:00</updated><id>/info/2019/11/02/first</id><content type="html" xml:base="/info/2019/11/02/first/">&lt;p&gt;This site is based on a template available on Github: &lt;a href=&quot;https://github.com/sujaykundu777/devlopr-jekyll&quot;&gt;Link&lt;/a&gt;.
+I just updated the information and removed a few details which I did not find necessary for
+my personal use. I might add some more changes later. The site is hosted by 
+&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;. The avatar was created with the free online 
+tool &lt;a href=&quot;https://getavataaars.com/&quot;&gt;https://getavataaars.com/&lt;/a&gt;. The icons were generated with the icon generator: 
+&lt;a href=&quot;https://www.favicon-generator.org/&quot;&gt;https://www.favicon-generator.org/&lt;/a&gt;.
+I also added a default image for post that do not specify an image, 
+I used it for this post, it is shown below again:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/posts/default_post.png&quot; alt=&quot;Default post image&quot; class=&quot;img-fluid&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Just so that I can look up how to add an image to a post, 
+since this post will also serve as an example how to write a post.
+The actual post files are in the directory ‘_posts’, the filename
+has to include the date when it was posted, see the file of this post
+as an example. The set of categories a post can have is fixed, if
+you want a new one, you need to define a new category in the folder “categories”,
+just look at the existing ones to get an idea how to do that.&lt;/p&gt;
+
+&lt;h5 id=&quot;running-locally---setting-up-local-server-for-testing&quot;&gt;&lt;strong&gt;Running locally:&lt;/strong&gt; - Setting up local server for testing.&lt;/h5&gt;
+
+&lt;p&gt;Try running:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$ bundle exec jekyll serve&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;in the base repository folder. If you are running for the first time,
+you’ll probably need to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bundle install&lt;/code&gt;
+to install all required dependencies. If these instructions 
+are not sufficient, try googling.&lt;/p&gt;
+
+&lt;p&gt;Post need to be added to the folder &lt;mark&gt;_posts&lt;/mark&gt; and named accordingly with
+the date, see this post as an example. Skills can be edited in the file 
+&lt;mark&gt;_includes/author_skills.html&lt;/mark&gt;.&lt;/p&gt;
+
+&lt;h5 id=&quot;post-example-structuring&quot;&gt;Post example structuring&lt;/h5&gt;
+
+&lt;p&gt;Emphasis, aka italics, with &lt;em&gt;asterisks&lt;/em&gt; or &lt;em&gt;underscores&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Strong emphasis, aka bold, with &lt;strong&gt;asterisks&lt;/strong&gt; or &lt;strong&gt;underscores&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Combined emphasis with &lt;strong&gt;asterisks and &lt;em&gt;underscores&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Strikethrough uses two tildes. &lt;del&gt;Scratch this.&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note :&lt;/strong&gt;
+Note this!&lt;/p&gt;
+
+&lt;p&gt;This is how you list things:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;First item&lt;/strong&gt; blah blah&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Second item&lt;/strong&gt; blah blah&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Another way to show command line commands:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rm -rf /
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Do not run this, it is just an example.&lt;/p&gt;
+
+&lt;p&gt;Edited on 21.12.2019.
+Also edited on 25.03.2020.&lt;/p&gt;</content><author><name>Christian Baumann</name></author><category term="info" /><summary type="html">This site is based on a template available on Github: Link. I just updated the information and removed a few details which I did not find necessary for my personal use. I might add some more changes later. The site is hosted by Github Pages. The avatar was created with the free online tool https://getavataaars.com/. The icons were generated with the icon generator: https://www.favicon-generator.org/. I also added a default image for post that do not specify an image, I used it for this post, it is shown below again:</summary></entry></feed>
